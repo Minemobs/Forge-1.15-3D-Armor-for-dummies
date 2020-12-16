@@ -26,7 +26,7 @@ public class ArmorRenderer extends ArmorItem {
     }
 
     @Override
-    public final BipedModel getArmorModel(LivingEntity entity, ItemStack itemStack, EqipmentSlotType armorSlot, BipedModel defaultArmor) {
+    public final BipedModel getArmorModel(LivingEntity entity, ItemStack itemStack, EquipmentSlotType armorSlot, BipedModel defaultArmor) {
         return armorModel.applyEntityStats(defaultArmor).applySlot(armorSlot);
     }
 
